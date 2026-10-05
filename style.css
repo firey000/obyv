@@ -160,3 +160,126 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
 }
+
+/* товары */
+.shop {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.filters {s
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.filters h3 {
+  margin: 18px 0 10px;
+  font-size: 14px;
+}
+
+.filters label {
+  display: block;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.filters input[type=number] {
+  width: 48%;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
+.filters button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.product .pic {
+  background: #f3f4f6;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  margin-bottom: 12px;
+}
+
+.product p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 10px 0;
+}
+
+.product button {
+  width: 100%;
+  background: #f3f4f6;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* подвал */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 32px 56px 16px;
+  font-size: 12px;
+}
+
+.fcols {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.fcols div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fcols b {
+  color: #fff;
+}
+
+.bottom {
+  border-top: 1px solid #1f2937;
+  margin-top: 24px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+
+  header,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .grid3,
+  .grid4,
+  .shop,
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
