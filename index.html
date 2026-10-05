@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShoeBox — Главная</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">ShoeBox</a>
+  <nav>
+    <a href="index.html" class="active">Главная</a>
+    <a href="shop.html" class="">Товары</a>
+    <a href="about.html" class="">О нас</a>
+    <a href="delivery.html" class="">Доставка</a>
+    <a href="cart.html" class="">Корзина (<span id="count">0</span>)</a>
+  </nav>
+  <input type="text" placeholder="Поиск">
+</header>
+<main>
+<div class="hero">
+  <div>
+    <h1>Новая коллекция</h1>
+    <p>Успей купить лучшие модели сезона со скидкой до 30%</p>
+    <a href="shop.html" class="btn">Смотреть</a>
+  </div>
+  <div class="center">
+    <div class="emoji">👟</div>
+    <p style="margin:0;font-size:15px;color:#000">NIKE AIRMAX 90 SUPER</p>
+  </div>
+</div>
+
+<h2>Категории</h2>
+<div class="grid3">
+  <div class="card center"><p style="font-size:20px">Мужская обувь</p><div class="emoji">🥾</div></div>
+  <div class="card center"><p style="font-size:20px">Женская обувь</p><div class="emoji">👠</div></div>
+  <div class="card center"><p style="font-size:20px">Детская обувь</p><div class="emoji">👶</div></div>
+</div>
+
+<h2>Популярное</h2>
+<div class="grid3">
+  <div class="card">
+    <div class="emoji">🥿</div>
+    <div class="pop"><div><b>Кроссовки Air Step</b><p class="price">4 990 ₽</p></div>
+    <button class="buy" onclick="addToCart('Кроссовки Air Step', 4990)">Купить →</button></div>
+  </div>
+  <div class="card">
+    <div class="emoji">🥿</div>
+    <div class="pop"><div><b>Кроссовки Astral Step</b><p class="price">3 290 ₽</p></div>
+    <button class="buy" onclick="addToCart('Кроссовки Astral Step', 3290)">Купить →</button></div>
+  </div>
+  <div class="card">
+    <div class="emoji">🥿</div>
+    <div class="pop"><div><b>Кроссовки Shadow Dance</b><p class="price">6 700 ₽</p></div>
+    <button class="buy" onclick="addToCart('Кроссовки Shadow Dance', 6700)">Купить →</button></div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="fcols">
+    <div style="min-width:220px"><b style="font-size:15px">ShoeBox</b><span>Лучшая обувь с доставкой<br>по всей стране с 2015 года.</span></div>
+    <div><b>Навигация</b><a href="index.html">Главная</a><a href="shop.html">Товары</a><a href="about.html">О нас</a><a href="delivery.html">Доставка</a></div>
+    <div><b>Помощь</b><span>Возврат</span><span>Размерная сетка</span><span>FAQ</span><span>Контакты</span></div>
+    <div><b>Контакты</b><span>📞 8 (800) 555-35-35</span><span>✉️ hello@shoebox.ru</span><span>📍 Москва, ул. Обувная, 1</span></div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 ShoeBox. Все права защищены.</span>
+    <span>Политика конфиденциальности | Оферта</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
