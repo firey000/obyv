@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ShoeBox — Корзина</title>
+<title>ShoeBox — Доставка</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +13,21 @@
     <a href="index.html" class="">Главная</a>
     <a href="shop.html" class="">Товары</a>
     <a href="about.html" class="">О нас</a>
-    <a href="delivery.html" class="">Доставка</a>
-    <a href="cart.html" class="active">Корзина (<span id="count">0</span>)</a>
+    <a href="delivery.html" class="active">Доставка</a>
+    <a href="cart.html" class="">Корзина (<span id="count">0</span>)</a>
   </nav>
   <input type="text" placeholder="Поиск">
 </header>
 <main>
-<h1>Корзина</h1>
-<p class="sub" id="empty">Корзина пуста. Добавьте товары на странице «Товары».</p>
-<div id="cart-list"></div>
-<div id="total"></div>
+<h1>Доставка и оплата</h1>
+<p class="sub">Выберите удобный для вас способ получения заказа.</p>
+<div class="grid3">
+  <div class="dcard"><h3>🚚 Курьером</h3><p>Доставка до двери за 1-2 дня.</p><p>Бесплатно от 5 000 ₽.</p><p>Оплата при получении или онлайн.</p></div>
+  <div class="dcard"><h3>📦 Пункт выдачи</h3><p>Более 5000 пунктов по стране.</p><p>Срок хранения 7 дней.</p><p>Примерка перед оплатой.</p></div>
+  <div class="dcard"><h3>📮 Почта России</h3><p>Доставка в любой город РФ.</p><p>Срок: 3-10 дней.</p><p>Трек-номер для отслеживания.</p></div>
+</div>
+<h2 style="font-weight:700;font-size:22px">Найти ближайший пункт выдачи</h2>
+<div class="map">📍</div>
 </main>
 <footer>
   <div class="fcols">
