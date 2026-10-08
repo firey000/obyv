@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShoeBox — Товары</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">ShoeBox</a>
+  <nav>
+    <a href="index.html" class="">Главная</a>
+    <a href="shop.html" class="active">Товары</a>
+    <a href="about.html" class="">О нас</a>
+    <a href="delivery.html" class="">Доставка</a>
+    <a href="cart.html" class="">Корзина (<span id="count">0</span>)</a>
+  </nav>
+  <input type="text" placeholder="Поиск">
+</header>
+<main>
+<div class="shop">
+  <aside class="filters">
+    <h3 style="margin-top:0;font-size:16px">Фильтры</h3>
+    <h3>Размер</h3>
+    <label><input type="checkbox"> 40</label>
+    <label><input type="checkbox"> 41</label>
+    <label><input type="checkbox"> 42</label>
+    <label><input type="checkbox"> 43</label>
+    <h3>Бренд</h3>
+    <label><input type="checkbox"> Nike</label>
+    <label><input type="checkbox"> Adidas</label>
+    <label><input type="checkbox"> Puma</label>
+    <h3>Цена, ₽</h3>
+    <input type="number" placeholder="от 3000"> <input type="number" placeholder="до 15000">
+    <button class="buy">Применить</button>
+  </aside>
+  <div>
+    <h1 style="font-size:18px;margin-bottom:16px">Все кроссовки (124)</h1>
+    <div class="grid3" id="products"></div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="fcols">
+    <div style="min-width:220px"><b style="font-size:15px">ShoeBox</b><span>Лучшая обувь с доставкой<br>по всей стране с 2015 года.</span></div>
+    <div><b>Навигация</b><a href="index.html">Главная</a><a href="shop.html">Товары</a><a href="about.html">О нас</a><a href="delivery.html">Доставка</a></div>
+    <div><b>Помощь</b><span>Возврат</span><span>Размерная сетка</span><span>FAQ</span><span>Контакты</span></div>
+    <div><b>Контакты</b><span>📞 8 (800) 555-35-35</span><span>✉️ hello@shoebox.ru</span><span>📍 Москва, ул. Обувная, 1</span></div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 ShoeBox. Все права защищены.</span>
+    <span>Политика конфиденциальности | Оферта</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
