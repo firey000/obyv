@@ -165,7 +165,7 @@ h2 {
   width: 100px;
 }
 
-/* товары */
+
 .shop {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -236,54 +236,35 @@ h2 {
   cursor: pointer;
 }
 
-/* подвал */
-footer {
-  background: #111827;
-  color: #9ca3af;
-  padding: 32px 56px 16px;
-  font-size: 12px;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.fcols {
+.about .photo {
+  background: #1e3a8a;
+  border-radius: 24px;
+  height: 300px;
   display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
 }
 
-.fcols div {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.stat {
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 24px;
+  padding: 30px 10px;
+  text-align: center;
 }
 
-.fcols b {
-  color: #fff;
-}
-
-.bottom {
-  border-top: 1px solid #1f2937;
-  margin-top: 24px;
-  padding-top: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 800px) {
-
-  header,
-  footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  nav {
-    gap: 18px;
-  }
-
-  .grid3,
-  .grid4,
-  .shop,
-  .about {
-    grid-template-columns: 1fr;
-  }
+.stat b {
+  display: block;
+  color: #1d2ed1;
+  font-size: 28px;
+  margin-bottom: 8px;
 }
